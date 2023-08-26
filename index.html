@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="roadlogo.png" type="image/x-icon">
+    <title>OffRoad</title>
+    <style>
+        .w {
+            height: 80px;
+            width: 80px;
+        }
+
+        .b {
+            background-color: grey;
+        }
+
+        .a {
+            background-size: cover;
+        }
+
+        .i {
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            width: 800px;
+        }
+
+        .t:hover {
+            transition: .8s;
+            color: gold;
+            text-shadow: 1px 15px 25px gold;
+            scale: 1.12;
+        }
+
+        ::selection {
+            background-color: black;
+            color: gold;
+            ;
+        }
+    </style>
+</head>
+
+<body class="bg-dark" data-bs-spy="scroll" data-bs-target="navbar">
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="roadlogo.png" alt="logo" class=" mx-3 w">OffRoad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#OffRoad">OffRoad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Images">İmages</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-warning dropdown-toggle mx-2 my-2"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                Qeydiyyat
+                            </button>
+                            <form action="https://google.az" method="post" class="dropdown-menu p-4 bg-dark">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label l">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email2" class="form-label l">Password</label>
+                                    <input type="password" class="form-control" id="email2" placeholder="Password">
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="ckeck">
+                                        <label class="form-check-label l" for="check">
+                                            Save
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-warning">Sign in</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL(HOME) -->
+    <div style="margin-top: 120px; margin-bottom: 20px;" class="container " id="Home">
+        <div id="carouselExampleCaptions" class="carousel slide" id="Home">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="r4.jpg" class="d-block w-100 a" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-light">OffRoad</h5>
+                        <p class="text-light">yolsuzluq maşını adlandırılan tamötürücülü avtomobil ilə çətin və
+                            keçilməz trayektoriya üzrə hərəkət etməni nəzərdə tutan aktiv istirahət və idman növüdür.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="road2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-light">OffRoad</h5>
+                        <p class="text-light">Yolsuzluq avtomobilinin ekipajı ən azı iki nəfərdən ibarət olmalıdır:
+                            pilot və şturman. Şturman naviqasiya sistemi ilə, hərəkət marşrutunu müəyyən edir, keçilməz
+                            yollarda pilota tövsiyələr verir. Pilot yolsuzluq və ekstremal şəraitdə avtomobili yaxşı
+                            idarə etmək bacarıqlarına malik olmalıdır.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="road3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark">OffRoad</h5>
+                        <p class="text-dark">Offroad-ı iki kateqoriyaya bölmək olar: idman və aktiv istirahət.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- OffRoad -->
+    <div class="container" id="OffRoad">
+        <!-- LIST -->
+        <p class="display-1 text-white text-center">OffRoad</p>
+        <div class="container my-3">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action bg-warning" aria-current="true">
+                    OffRoad
+                </button>
+                <button type="button" class="list-group-item list-group-item-action b">İdman kateqoriyalı</button>
+                <button type="button" class="list-group-item list-group-item-action b">Aktiv istirahət
+                    katqoriyalı</button>
+            </div>
+        </div>
+        <!-- CARD -->
+        <div class="container">
+            <div class="card my-3 w-100">
+                <img src="road1.webp" class="card-img-top">
+                <div class="card-body b">
+                    <p class="card-title text-center display-5 t">OffRoad</p>
+                    <p class="card-text ">
+                        Off-road (ing. off-road — yolsuzluq) — yolsuzluq maşını adlandırılan tamötürücülü avtomobil ilə
+                        çətin və keçilməz trayektoriya üzrə hərəkət etməni nəzərdə tutan aktiv istirahət və idman
+                        növüdür.
+                        Şturman
+                        naviqasiya sistemi ilə, hərəkət marşrutunu müəyyən edir, keçilməz yollarda pilota tövsiyələr
+                        verir.
+                        Pilot yolsuzluq və ekstremal şəraitdə avtomobili yaxşı idarə etmək bacarıqlarına malik
+                        olmalıdır.
+                    </p>
+                    <!-- MODAL -->
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header b">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">OffRoad 1</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Yolsuzluq avtomobilinin ekipajı ən azı iki nəfərdən ibarət olmalıdır: pilot və
+                                    şturman.
+                                </div>
+                                <div class="modal-footer ">
+                                    <button class="btn btn-warning t" data-bs-target="#exampleModalToggle2"
+                                        data-bs-toggle="modal">Open second modal</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header b">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OffRoad 2</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Offroad-ı iki kateqoriyaya bölmək olar: idman və aktiv istirahət.
+                                </div>
+                                <div class="modal-footer ">
+                                    <button class="btn btn-warning" data-bs-target="#exampleModalToggle"
+                                        data-bs-toggle="modal">Back to first</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-warning" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open
+                        first
+                        modal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Images">
+        <div class="container">
+            <img src="road6.jpg" class="img-fluid my-4" alt="...">
+
+            <img src="road7.webp" class="img-fluid my-4" alt="...">
+            <img src="r6.jpg" class="img-fluid my-4" alt="...">
+
+            <img src="r3.jpg" class="img-fluid my-4" alt="...">
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-bottom">
+        <p class="text-white mx-auto my-auto f">
+            Design by Toghrul &copy; 2023
+        </p>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
